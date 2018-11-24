@@ -166,7 +166,9 @@ class DBoard(object):
         # If no piece is in source->ERROR.
         if piece is None:
             raise Exception("NO PIECE IN SOURCE!")
-
+        '''
+                ICI FAIRE BOUGER LE ROBOT 
+        '''
         piece.move(drow, dcol)  # Move piece in destination.
 
         # Check Promotion: Promote only if `action` is a final-step.
@@ -176,6 +178,9 @@ class DBoard(object):
         if action.type == 'CAPTURE' or action.type == 'CHAIN':
             # If action is CAPTURE-type get captured piece.
             captured = action.captured
+            '''
+                    ICI FAIRE BOUGER LE ROBOT POUR ENLEVER UNE PIECE
+             '''
             captured.captured()             # Remove captured piece from board.
             if captured.color == 'LIGHT':   # ... and from right list.
                 self.light_pieces.remove(captured)

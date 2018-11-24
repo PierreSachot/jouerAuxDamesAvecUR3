@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-10-15" view-index="0" gantt-divider-location="523" resource-divider-location="300" version="2.8.6" locale="fr">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="353" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="76" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value=""/>
+        <option id="taskLabelLeft" value=""/>
+        <option id="taskLabelRight" value=""/>
+        <option id="color.recent"><![CDATA[#ff0033 #ff0000 #ff3333 #ff3366]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Rédaction cahier des charges V0" color="#8cb6ce" meeting="false" start="2018-09-17" duration="15" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+            <depend id="133" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="75" name="Réunion de lancement" color="#8cb6ce" meeting="true" start="2018-10-02" duration="0" complete="0" thirdDate="2018-10-02" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="32" name="Livraison cahier des charges" color="#ff3366" meeting="true" start="2018-10-08" duration="0" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" priority="4" expand="true"/>
+        <task id="12" name="Rédaction etat de l'art" color="#8cb6ce" meeting="false" start="2018-10-10" duration="13" complete="0" thirdDate="2018-10-10" thirdDate-constraint="0" expand="true">
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+            <depend id="83" type="2" difference="0" hardness="Strong"/>
+            <depend id="123" type="2" difference="0" hardness="Strong"/>
+            <depend id="133" type="2" difference="0" hardness="Strong"/>
+            <task id="51" name="Étude des systèmes d'analyse vidéo" meeting="false" start="2018-10-10" duration="13" complete="0" expand="true">
+                <depend id="133" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="60" name="Étude du système de déplacement de l'UR3" meeting="false" start="2018-10-10" duration="13" complete="0" expand="true"/>
+            <task id="61" name="Étude des systèmes de saisie existants" color="#8cb6ce" meeting="false" start="2018-10-10" duration="13" complete="0" thirdDate="2018-10-10" thirdDate-constraint="0" expand="true">
+                <depend id="71" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="71" name="Rendu état de l'art" color="#ff0033" meeting="true" start="2018-10-29" duration="0" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true"/>
+        <task id="40" name="Rédaction cahier des charges V1" color="#8cb6ce" meeting="false" start="2018-10-29" duration="24" complete="0" thirdDate="2018-12-10" thirdDate-constraint="0" expand="true">
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="39" name="Livraison cahier des charges V1" color="#ff3333" meeting="true" start="2018-11-30" duration="0" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Prototypage" color="#8cb6ce" meeting="false" start="2018-10-29" duration="31" complete="0" thirdDate="2018-09-13" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <task id="83" name="Système de saisie" color="#8cb6ce" meeting="false" start="2018-10-29" duration="21" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="137" name="Recherche de fournisseurs" meeting="false" start="2018-10-29" duration="10" complete="0" expand="true">
+                    <depend id="143" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="143" name="Commande" color="#8cb6ce" meeting="false" start="2018-11-12" duration="1" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+                    <depend id="149" type="2" difference="0" hardness="Strong"/>
+                    <depend id="157" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="149" name="Livraison" color="#8cb6ce" meeting="false" start="2018-11-13" duration="9" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+                    <depend id="219" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="157" name="Préparation du code" color="#8cb6ce" meeting="false" start="2018-11-13" duration="9" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true"/>
+                <task id="219" name="Assemablage du prototype" color="#8cb6ce" meeting="false" start="2018-11-26" duration="1" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
+                    <depend id="229" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="122" name="Développement du système de déplacement" meeting="false" start="2018-10-29" duration="31" complete="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="123" name="Déplacement robot basique" color="#8cb6ce" meeting="false" start="2018-10-29" duration="8" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+                    <depend id="125" type="2" difference="0" hardness="Strong"/>
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="125" name="Jeu de dame fonctionnel pour le joueur IA" color="#8cb6ce" meeting="false" start="2018-11-08" duration="10" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="127" name="Déplacement robot selon case damier" color="#8cb6ce" meeting="false" start="2018-11-22" duration="1" complete="0" thirdDate="2018-11-12" thirdDate-constraint="0" expand="true">
+                    <depend id="223" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="223" name="Déplacement robot selon mouvement jeu de dame" color="#8cb6ce" meeting="false" start="2018-11-23" duration="3" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                    <depend id="229" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="229" name="Déplacement et saisie de pions" color="#8cb6ce" meeting="false" start="2018-11-28" duration="1" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
+                <task id="232" name="Intégration tour humain" color="#8cb6ce" meeting="false" start="2018-12-10" duration="1" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="132" name="Système de reconnaissance vidéo" meeting="false" start="2018-10-29" duration="30" complete="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+                <task id="133" name="Détection cases damier sur une image" color="#8cb6ce" meeting="false" start="2018-10-29" duration="10" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+                    <depend id="182" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="182" name="Détection cases depuis image acquisition vidéo" color="#8cb6ce" meeting="false" start="2018-11-12" duration="9" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                    <depend id="188" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="188" name="Détection cases flux vidéo" color="#8cb6ce" meeting="false" start="2018-11-23" duration="2" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                    <depend id="192" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="192" name="Détection pions" color="#8cb6ce" meeting="false" start="2018-11-27" duration="5" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                    <depend id="196" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="196" name="Fonction qui renvoie état du damier" color="#8cb6ce" meeting="false" start="2018-12-04" duration="4" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                    <depend id="232" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+        </task>
+        <task id="26" name="Documentation" color="#000000" meeting="false" start="2018-11-22" duration="17" complete="0" thirdDate="2018-12-11" thirdDate-constraint="0" expand="true">
+            <depend id="44" type="2" difference="0" hardness="Strong"/>
+            <task id="30" name="Technique" meeting="false" start="2018-11-22" duration="17" complete="0" expand="true"/>
+            <task id="31" name="Utilisateur" color="#8cb6ce" meeting="false" start="2018-12-11" duration="1" complete="0" thirdDate="2019-01-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="73" name="Tests utilisateurs" color="#8cb6ce" meeting="false" start="2018-12-11" duration="3" complete="0" thirdDate="2018-11-19" thirdDate-constraint="0" expand="true">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" name="Vidéo de présentation" color="#8cb6ce" meeting="false" start="2018-12-14" duration="1" complete="0" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true">
+            <depend id="44" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="44" name="Livraison Prototypage / Documentation" color="#ff0000" meeting="true" start="2018-12-17" duration="0" complete="0" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Enzo" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Pierre" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Quentin" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
