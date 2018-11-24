@@ -1,6 +1,5 @@
 import urx
 import time
-import math
 import sys
 
 rob = urx.Robot("10.55.55.41")

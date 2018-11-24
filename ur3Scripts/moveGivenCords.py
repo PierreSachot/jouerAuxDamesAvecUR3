@@ -1,6 +1,5 @@
 import urx
 import time
-import math
 
 '''
 
