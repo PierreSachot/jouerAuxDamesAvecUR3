@@ -33,7 +33,7 @@ weights2 = {'PIECE':400,
 
 # Exemple
 D = DraughtsBrain(weights1, 2, weights2,verbose=True)
-#D.run_self()
+D.run_self()
 
 for p in D.board.dark_pieces:
     print(p.position)

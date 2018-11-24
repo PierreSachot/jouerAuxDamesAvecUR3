@@ -20,7 +20,7 @@ Created on Jul 21, 2011
 
 DBoard module contains DBoard class and related stuff.
 '''
-from cobradraughts.core.DPiece import DPiece
+from draughts.cobradraughts.core.DPiece import DPiece
 
 __author__ = "Davide Aversa"
 __copyright__ = "Copyright 2011"

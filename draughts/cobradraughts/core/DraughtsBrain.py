@@ -23,7 +23,8 @@ DraughtsBrain module contains DraughtsBrain class and related stuff.
 
 import random
 
-from cobradraughts.core.DBoard import DBoard
+from draughts.cobradraughts.core.DBoard import DBoard
+from traitementVideo.board import get_board
 
 __author__ = "Davide Aversa"
 __copyright__ = "Copyright 2011"
@@ -121,7 +122,7 @@ class DraughtsBrain(object):
             if(self.turn=='LIGHT'):
                 testVar = input("Tour joueur")
 
-                #ici mettre code traitement vidéo qui permet de récuperer une nouvelle grille
+                self.board=get_board()
                 self.switch_turn()
             else:
                 bestmove = self.best_move()
@@ -157,7 +158,6 @@ class DraughtsBrain(object):
                 self.nocapturecounter += 1
             else:
                 self.nocapturecounter = 0
-
 
 
     ########

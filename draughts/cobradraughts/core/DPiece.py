@@ -21,7 +21,7 @@ Created on Jul 21, 2011
 DPiece module contains DPiece class and related stuff.
 '''
 
-from cobradraughts.core.DAction import DAction
+from draughts.cobradraughts.core.DAction import DAction
 
 __author__ = "Davide Aversa"
 __copyright__ = "Copyright 2011"
