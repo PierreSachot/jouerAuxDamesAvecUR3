@@ -7,10 +7,7 @@ def get_board():
     board.light_pieces = []
     board.dark_pieces = []
     board.bitmap = [None] * 50
-    '''
-    En théorie les pions noirs (ceux de l'ordinateur) ne bougent pas 
-    => pas besoin de réinnitialiser dark_pieces si ca permet de simplifier le traitement vidéo
-     '''
+   
 
     # ajout des pions sur le damier
 
