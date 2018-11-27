@@ -20,7 +20,9 @@ Created on Jul 21, 2011
 
 DBoard module contains DBoard class and related stuff.
 '''
+import time
 from draughts.cobradraughts.core.DPiece import DPiece
+from ur3Scripts import move
 
 __author__ = "Davide Aversa"
 __copyright__ = "Copyright 2011"
@@ -152,6 +154,7 @@ class DBoard(object):
             @param action: Action to apply.
             @param chain: True if action is one step of a chain action.
         '''
+
         # If ACTION is UNDO-type DO NOT add to undo-list.
         if action.type != 'UNDO' and not chain:
             self.movelist.append(action)
@@ -167,8 +170,10 @@ class DBoard(object):
         if piece is None:
             raise Exception("NO PIECE IN SOURCE!")
         '''
+                
                 ICI FAIRE BOUGER LE ROBOT 
         '''
+
         piece.move(drow, dcol)  # Move piece in destination.
 
         # Check Promotion: Promote only if `action` is a final-step.
@@ -202,6 +207,7 @@ class DBoard(object):
 
         # If chain-capture (or chain-undo) apply_action next step.
         if action.next:
+
             self.apply_action(action.next, chain=True)  # Record only the first step.
 
         self.light_cached = False
@@ -217,6 +223,7 @@ class DBoard(object):
         RETURN:
             @return: List of all possible action.
         '''
+
         if color == 'LIGHT':
             if self.light_cached:
                 return self.light_pos_moves

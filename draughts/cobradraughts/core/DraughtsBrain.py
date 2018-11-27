@@ -22,8 +22,11 @@ DraughtsBrain module contains DraughtsBrain class and related stuff.
 '''
 
 import random
+import time
 
 from draughts.cobradraughts.core.DBoard import DBoard
+from ur3Scripts import move
+from prehenseurVentouse import prehenseur
 from traitementVideo.board import get_board
 
 __author__ = "Davide Aversa"
@@ -120,16 +123,21 @@ class DraughtsBrain(object):
         self.gameover = False
         while not self.gameover and self.nocapturecounter < 50:
             if(self.turn=='LIGHT'):
-                testVar = input("Tour joueur")
-
-                self.board=get_board()
+                raw_input("Tour joueur") ##raw input python 2, input python3
+                #self.board=get_board()
                 self.switch_turn()
             else:
                 bestmove = self.best_move()
                 if not bestmove:
                     self.winner = self._switch_player(self.turn)  # No valid move!
                     break
+
+                self.pickAndPlace(bestmove)
+
+
                 self.apply_action(bestmove)
+
+
                 if self.verbose:
                     print(self.board)
                     print(self.board.board_score(self.weights))
@@ -159,6 +167,28 @@ class DraughtsBrain(object):
             else:
                 self.nocapturecounter = 0
 
+    def pickAndPlace(self,action):
+        # Get Source and Destination.
+        srow, scol = action.source
+        print("srow = ", srow)
+        print("scol = ", scol)
+        drow, dcol = action.destination
+        print("drow = ", drow)
+        print("dcol = ", dcol)
+        move.PlayPose()
+        move.Cords(0, 0, srow, scol)
+        move.Down()
+        prehenseur.Aspire()
+        time.sleep(0.5)
+        move.Up()
+        time.sleep(1)
+        move.Cords(srow, scol, drow, dcol)
+        move.Down()
+        time.sleep(0.5)
+        prehenseur.Stop()
+        move.Up()
+        time.sleep(1)
+        move.WaitPose()
 
     ########
     ## AI ##
@@ -232,6 +262,7 @@ class DraughtsBrain(object):
             moves = self.board.all_move(player)
             v = float('inf')
             for mov in moves:
+
                 self.board.apply_action(mov)
                 v = min(v, self.alphabeta(alpha, beta, level - 1, self._switch_player(player), weights))
                 self.board.undo_last()
@@ -241,3 +272,4 @@ class DraughtsBrain(object):
             if len(moves) == 0:
                 self.path.append((self.board.movelist[self.move], v))
             return v
+

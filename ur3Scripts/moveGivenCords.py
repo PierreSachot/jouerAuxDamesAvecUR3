@@ -17,6 +17,8 @@ rob.movej(startPose, acc=1, vel=0.5)
 time.sleep(1)
 print ("Deplacement position jeu")
 rob.movej(playPose, acc=1, vel=0.5)
+
+
 previousX=0;
 previousY=0;
 #hypothenus=sqrt(2cote)

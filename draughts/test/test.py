@@ -7,6 +7,9 @@ Created on Jul 22, 2011
 import sys
 import os.path
 
+#linux
+sys.path.append('/home/constant/Documents/jouerAuxDamesAvecUR3/')
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 #from cobradraughts.core.DraughtsBrain import DraughtsBrain
 from draughts.cobradraughts.core.DraughtsBrain import DraughtsBrain
