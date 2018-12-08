@@ -1,9 +1,10 @@
 from draughts.cobradraughts.core.DBoard import DBoard
 from draughts.cobradraughts.core.DPiece import DPiece
 
-board = DBoard()
+
 
 def get_board():
+    board = DBoard()
     board.light_pieces = []
     board.dark_pieces = []
     board.bitmap = [None] * 50
