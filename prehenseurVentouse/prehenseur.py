@@ -1,11 +1,17 @@
 
-import time
+import serial
+
 
 def Aspire():
-    time.sleep(1) #code prehenseur aspire
+    ser = serial.Serial('/dev/...', 9600)
+    ser.write('1') # python 2, pour python 3 ser.write(b'5')
+    ser.close()
 
 def Stop():
-    time.sleep(1) #code stop prehenseur
+    ser = serial.Serial('/dev/...', 9600)
+    ser.write('2')  # python 2, pour python 3 ser.write(b'5')
+    ser.close()
+
 
 
 
