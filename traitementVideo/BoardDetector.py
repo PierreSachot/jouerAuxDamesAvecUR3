@@ -1,7 +1,11 @@
 # -*- coding:utf-8 -*-
 import cv2
+import sys
+import os.path
 
-from traitementVideo.Case import Case
+#linux
+sys.path.append('/run/media/pierre/Partage/Documents/ENSC/2ème année/S7/Transpromo/Projet UR3/jouerAuxDamesAvecUR3/')
+from Case import Case
 from draughts.cobradraughts.core.DBoard import DBoard
 from draughts.cobradraughts.core.DPiece import DPiece
 
@@ -40,33 +44,33 @@ class BoardDetector:
 
         self.top_right = (self.top_left[0] + self.w, self.top_left[1])
         self.bottom_left = (self.top_left[0], self.top_left[1] + self.h)
-        self.squareSizeX = (self.top_right[0] - self.top_left[0]) / self.nbSquarePerLines
-        self.squareSizeY = (self.bottom_right[1] - self.top_right[1]) / self.nbSquarePerLines
+        self.tailleCarreauX = (self.top_right[0] - self.top_left[0]) / self.nbSquarePerLines
+        self.tailleCarreauY = (self.bottom_right[1] - self.top_right[1]) / self.nbSquarePerLines
 
-    def createBoard(self):
+    def createBoard(self, nbPointsX, nbPointsY):
         # creation des points
         pointsList = []
-        for i in range(0, 11):
+        for i in range(0, nbPointsX):
             pointsList.append([])
-            for j in range(0, 11):
+            for j in range(0, nbPointsY):
                 pointsList[i].append([])
 
         pointPrecedent = self.top_right
         currentPoint = self.top_right
-        for x in range(0, 11):
-            currentPoint = (self.top_right[0] - x * self.nbSquarePerLines - 1, self.top_right[1])
+        for x in range(0, nbPointsX):
+            currentPoint = (self.top_right[0] - x * self.tailleCarreauX-3, self.top_right[1])
             pointPrecedent = currentPoint
             pointsList[x][0] = currentPoint
-            for y in range(1, 11):
-                currentPoint = (pointPrecedent[0], pointPrecedent[1] + self.nbSquarePerLines + 1)
+            for y in range(1, nbPointsY):
+                currentPoint = (pointPrecedent[0], pointPrecedent[1] + self.tailleCarreauY)
                 pointsList[x][y] = currentPoint
                 pointPrecedent = currentPoint
 
         # creation des cases dans une liste
         listecases = []
-        for y in range(0, 10):
+        for y in range(0, nbPointsY-1):
             listecases.append([])
-            for x in range(0, 10):
+            for x in range(0, nbPointsX-1):
                 listecases[y].append([])
                 maCase = Case(pointsList[y][x], pointsList[y][x + 1], pointsList[y + 1][x], pointsList[y + 1][x + 1])
                 listecases[y][x] = maCase
@@ -76,8 +80,8 @@ class BoardDetector:
         board.dark_pieces = []
         board.bitmap = [None] * 50
         # Détection des pions
-        for y in range(0, 10):
-            for x in range(0, 10):
+        for y in range(0, nbPointsY-1):
+            for x in range(0, nbPointsX-1):
                 milieuCase = (
                     listecases[y][x].top_left[0] + (
                                 listecases[y][x].bottom_right[0] - listecases[y][x].top_left[0]) / 2,

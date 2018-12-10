@@ -7,7 +7,7 @@ bd = BoardDetector(cv2.imread('Images/test.jpg'), cv2.imread('Images/pattern.png
 # On trouve le damier dans l'image
 bd.findTemplate()
 # On créer l'objet board.
-board, imgBase = bd.createBoard()
+board, imgBase = bd.createBoard(11,11)
 
 print(board)
 
