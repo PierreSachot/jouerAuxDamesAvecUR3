@@ -124,7 +124,7 @@ class DraughtsBrain(object):
         while not self.gameover and self.nocapturecounter < 50:
             if(self.turn=='LIGHT'):
                 raw_input("Tour joueur") ##raw input python 2, input python3
-                #self.board=get_board()
+                self.board=get_board()
                 self.switch_turn()
             else:
                 bestmove = self.best_move()
@@ -184,8 +184,9 @@ class DraughtsBrain(object):
         time.sleep(1)
         move.Cords(srow, scol, drow, dcol)
         move.Down()
-        time.sleep(0.5)
+
         prehenseur.Stop()
+        time.sleep(0.5)
         move.Up()
         time.sleep(1)
         move.WaitPose()
