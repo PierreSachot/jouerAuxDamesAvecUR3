@@ -54,7 +54,7 @@ class BoardDetector:
             pointsList.append([])
             for j in range(0, nbPointsY):
                 pointsList[i].append([])
-
+        cv2.rectangle(self.originalImg, self.top_left, self.bottom_right, (0, 255, 0), 1);
         pointPrecedent = self.top_right
         currentPoint = self.top_right
         for x in range(0, nbPointsX):
@@ -90,7 +90,7 @@ class BoardDetector:
                 b = self.originalImg[milieuCase[1], milieuCase[0], 0]
                 g = self.originalImg[milieuCase[1], milieuCase[0], 1]
                 r = self.originalImg[milieuCase[1], milieuCase[0], 2]
-                if b < 100 and g > 87:
+                if b > 40 and b<100 and g < 100 and g > 60:
                     new_piece = DPiece(board, y, x, 'LIGHT')
                     board.light_pieces.append(new_piece)
                     board.set_bitmap(y, x, new_piece)

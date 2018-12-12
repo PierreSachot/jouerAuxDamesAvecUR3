@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82826160-1f6d-4f8d-9960-c167e888d3f7" name="Default Changelist" comment="" />
+    <list default="true" id="82826160-1f6d-4f8d-9960-c167e888d3f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitementVideo/BoardDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/BoardDetector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitementVideo/Images/pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/Images/pattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitementVideo/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitementVideo/displayWebcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/displayWebcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traitementVideo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +23,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding>
+                <element signature="e#23#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traitementVideo/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -26,27 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prehenseurVentouse/prehenseur.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/traitementVideo/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/BoardDetector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+            <state relative-caret-position="260">
+              <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -57,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/displayWebcam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -90,21 +92,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/traitementVideo/displayWebcam.py" />
         <option value="$PROJECT_DIR$/DetectionFonctionnelle.py" />
         <option value="$PROJECT_DIR$/traitementVideo/BoardDetectorObject.py" />
         <option value="$PROJECT_DIR$/draughts/cobradraughts/core/__init__.py" />
         <option value="$PROJECT_DIR$/traitementVideo/DetectionFonctionnelle.py" />
-        <option value="$PROJECT_DIR$/traitementVideo/BoardDetector.py" />
-        <option value="$PROJECT_DIR$/traitementVideo/main.py" />
+        <option value="$PROJECT_DIR$/traitementVideo/displayWebcam.py" />
         <option value="$PROJECT_DIR$/traitementVideo/board.py" />
+        <option value="$PROJECT_DIR$/traitementVideo/main.py" />
+        <option value="$PROJECT_DIR$/traitementVideo/BoardDetector.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -121,7 +123,7 @@
             <path>
               <item name="jouerAuxDamesAvecUR3" type="b2602c69:ProjectViewProjectNode" />
               <item name="jouerAuxDamesAvecUR3" type="462c0819:PsiDirectoryNode" />
-              <item name="prehenseurVentouse" type="462c0819:PsiDirectoryNode" />
+              <item name="traitementVideo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -185,17 +187,18 @@
       <workItem from="1543938978727" duration="3646000" />
       <workItem from="1544270275733" duration="14000" />
       <workItem from="1544270313023" duration="3630000" />
+      <workItem from="1544599564340" duration="1889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15540000" />
+    <option name="totallyTimeSpent" value="17639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26307365" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,7 +212,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32969433" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -236,14 +239,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ur3Scripts/original_Pos.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/Corners_screenshot_29.11.2018.png" />
     <entry file="file://$PROJECT_DIR$/draughts/cobradraughts/core/DBoard.py">
@@ -286,20 +281,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traitementVideo/DetectionFonctionnelle.py">
+    <entry file="file://$PROJECT_DIR$/traitementVideo/DetectionFonctionnelle.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draughts/test/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prehenseurVentouse/prehenseur.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="44" selection-start-line="44" selection-end-line="53" selection-end-column="37" />
+        <state>
           <folding>
-            <element signature="e#18#28#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traitementVideo/BoardDetector.py">
+    <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
@@ -308,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/displayWebcam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -318,26 +327,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
+    <entry file="file://$PROJECT_DIR$/traitementVideo/BoardDetector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="260">
+          <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prehenseurVentouse/prehenseur.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
