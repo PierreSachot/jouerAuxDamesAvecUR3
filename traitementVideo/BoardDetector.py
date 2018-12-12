@@ -4,7 +4,8 @@ import sys
 import os.path
 
 #linux
-sys.path.append('/run/media/pierre/Partage/Documents/ENSC/2ème année/S7/Transpromo/Projet UR3/jouerAuxDamesAvecUR3/')
+#sys.path.append('/run/media/pierre/Partage/Documents/ENSC/2ème année/S7/Transpromo/Projet UR3/jouerAuxDamesAvecUR3/')
+sys.path.append('/home/constant/Documents/jouerAuxDamesAvecUR3/')
 from Case import Case
 from draughts.cobradraughts.core.DBoard import DBoard
 from draughts.cobradraughts.core.DPiece import DPiece
