@@ -2,18 +2,24 @@
 import cv2
 from BoardDetector import BoardDetector
 
-# On créer le detecteur du damier
-bd = BoardDetector(cv2.imread('Images/test.jpg'), cv2.imread('Images/pattern.png'), 10)
-# On trouve le damier dans l'image
-bd.findTemplate()
-# On créer l'objet board.
-board, imgBase = bd.createBoard(11,11)
 
-print(board)
+cap = cv2.VideoCapture(0)
 
-cv2.imshow('Corners', imgBase)
+while(True):
+    # Capture frame-by-frame
+    ret, frame = cap.read()
+    # On créer le detecteur du damier
+    bd = BoardDetector(frame, cv2.imread('Images/pattern.png'), 10)
+    # On trouve le damier dans l'image
+    bd.findTemplate()
+    # On créer l'objet board.
+    board, imgBase = bd.createBoard(11,11)
 
-cv2.waitKey(0)  # waits until a key is pressed
+    # Display the resulting frame
+    cv2.imshow('frame',imgBase)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
 
-cv2.destroyAllWindows()  # destroys the window showing image
-
+# When everything done, release the capture
+cap.release()
+cv2.destroyAllWindows()
