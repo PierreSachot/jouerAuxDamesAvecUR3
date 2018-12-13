@@ -170,7 +170,6 @@ class DBoard(object):
         if piece is None:
             raise Exception("NO PIECE IN SOURCE!")
         '''
-                
                 ICI FAIRE BOUGER LE ROBOT 
         '''
 
@@ -183,11 +182,9 @@ class DBoard(object):
         if action.type == 'CAPTURE' or action.type == 'CHAIN':
             # If action is CAPTURE-type get captured piece.
             captured = action.captured
-            '''
-                    ICI FAIRE BOUGER LE ROBOT POUR ENLEVER UNE PIECE
-             '''
+
             captured.captured()             # Remove captured piece from board.
-            if captured.color == 'LIGHT':   # ... and from right list.
+            if captured.color == 'LIGHT':   # ... and from right list.f
                 self.light_pieces.remove(captured)
             else:
                 self.dark_pieces.remove(captured)
@@ -339,3 +336,27 @@ class DBoard(object):
                     string += '.'
             string += '\n'
         return string
+
+    def pickAndPlace(self,action):
+        # Get Source and Destination.
+        srow, scol = action.source
+        print("srow = ", srow)
+        print("scol = ", scol)
+        drow, dcol = action.destination
+        print("drow = ", drow)
+        print("dcol = ", dcol)
+        move.PlayPose()
+        move.Cords(0, 0, srow, scol)
+        move.Down()
+        prehenseur.Aspire()
+        time.sleep(0.5)
+        move.Up()
+        time.sleep(1)
+        move.Cords(srow, scol, drow, dcol)
+        move.Down()
+
+        prehenseur.Stop()
+        time.sleep(0.5)
+        move.Up()
+        time.sleep(1)
+        move.WaitPose()

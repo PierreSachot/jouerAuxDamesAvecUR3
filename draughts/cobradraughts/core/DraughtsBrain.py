@@ -24,10 +24,16 @@ DraughtsBrain module contains DraughtsBrain class and related stuff.
 import random
 import time
 
+import sys
+import os.path
+
+#linux
+sys.path.append('/home/constant/Documents/jouerAuxDamesAvecUR3/')
+
 from draughts.cobradraughts.core.DBoard import DBoard
 from ur3Scripts import move
 from prehenseurVentouse import prehenseur
-from traitementVideo.board import get_board
+from traitementVideo import board
 
 __author__ = "Davide Aversa"
 __copyright__ = "Copyright 2011"
@@ -123,24 +129,26 @@ class DraughtsBrain(object):
         self.gameover = False
         while not self.gameover and self.nocapturecounter < 50:
             if(self.turn=='LIGHT'):
-                raw_input("Tour joueur") ##raw input python 2, input python3
-                #self.board=get_board()
+                self.__init__(self.weights,self.horizon,self.weights_bis,self.verbose)
+                raw_input("Tour joueur") #raw input python 2, input python3
+                self.board=board.get_board()
+                print(self.board)
                 self.switch_turn()
+
             else:
                 bestmove = self.best_move()
                 if not bestmove:
                     self.winner = self._switch_player(self.turn)  # No valid move!
                     break
 
+                print(self.turn)
                 self.pickAndPlace(bestmove)
-
-
                 self.apply_action(bestmove)
-
 
                 if self.verbose:
                     print(self.board)
-                    print(self.board.board_score(self.weights))
+                    #print(self.board.board_score(self.weights))
+
         if not self.gameover:  # So, too-much noncapture.
             self.winner = 'DRAW'
         return self.winner
@@ -153,6 +161,7 @@ class DraughtsBrain(object):
             @param action: Action that it's going to be executed.
         '''
         self.board.apply_action(action)
+
         self.move += 1
         if len(self.board.light_pieces) == 0:
             self.gameover = True
@@ -170,11 +179,7 @@ class DraughtsBrain(object):
     def pickAndPlace(self,action):
         # Get Source and Destination.
         srow, scol = action.source
-        print("srow = ", srow)
-        print("scol = ", scol)
         drow, dcol = action.destination
-        print("drow = ", drow)
-        print("dcol = ", dcol)
         move.PlayPose()
         move.Cords(0, 0, srow, scol)
         move.Down()
@@ -184,7 +189,6 @@ class DraughtsBrain(object):
         time.sleep(1)
         move.Cords(srow, scol, drow, dcol)
         move.Down()
-
         prehenseur.Stop()
         time.sleep(0.5)
         move.Up()
