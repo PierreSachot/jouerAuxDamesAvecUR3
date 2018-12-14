@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82826160-1f6d-4f8d-9960-c167e888d3f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementVideo/BoardDetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/BoardDetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementVideo/Images/pattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/Images/pattern.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traitementVideo/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traitementVideo/displayWebcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/displayWebcam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traitementVideo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/traitementVideo/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,17 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/jouerAuxDamesAvecUR3$python.coverage" NAME="main Coverage Results" MODIFIED="1544275167050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jouerAuxDamesAvecUR3$main.coverage" NAME="main Coverage Results" MODIFIED="1544708939392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -35,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -47,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traitementVideo/BoardDetector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+            <state relative-caret-position="-880">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -59,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traitementVideo/displayWebcam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="270">
               <caret line="19" column="23" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -97,9 +92,10 @@
         <option value="$PROJECT_DIR$/draughts/cobradraughts/core/__init__.py" />
         <option value="$PROJECT_DIR$/traitementVideo/DetectionFonctionnelle.py" />
         <option value="$PROJECT_DIR$/traitementVideo/displayWebcam.py" />
-        <option value="$PROJECT_DIR$/traitementVideo/board.py" />
-        <option value="$PROJECT_DIR$/traitementVideo/main.py" />
         <option value="$PROJECT_DIR$/traitementVideo/BoardDetector.py" />
+        <option value="$PROJECT_DIR$/traitementVideo/board.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/traitementVideo/main.py" />
       </list>
     </option>
   </component>
@@ -123,6 +119,11 @@
             <path>
               <item name="jouerAuxDamesAvecUR3" type="b2602c69:ProjectViewProjectNode" />
               <item name="jouerAuxDamesAvecUR3" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jouerAuxDamesAvecUR3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jouerAuxDamesAvecUR3" type="462c0819:PsiDirectoryNode" />
               <item name="traitementVideo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -135,6 +136,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/traitementVideo" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,18 +194,19 @@
       <workItem from="1543938978727" duration="3646000" />
       <workItem from="1544270275733" duration="14000" />
       <workItem from="1544270313023" duration="3630000" />
-      <workItem from="1544599564340" duration="1889000" />
+      <workItem from="1544599564340" duration="2514000" />
+      <workItem from="1544708209844" duration="3271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17639000" />
+    <option name="totallyTimeSpent" value="21535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26627535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26947704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,19 +313,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/displayWebcam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="270">
           <caret line="19" column="23" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -325,10 +323,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/traitementVideo/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/pattern.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
@@ -337,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traitementVideo/BoardDetector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+        <state relative-caret-position="-880">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
