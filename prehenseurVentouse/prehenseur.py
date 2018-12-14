@@ -2,7 +2,7 @@ import time
 import serial
 import Tkinter
 
-ser = serial.Serial('/dev/ttyACM0', 115200) #  tools = port "COM4?"
+ser = serial.Serial('/dev/ttyACM1', 115200) #  tools = port "COM4?"
 
 def Aspire():
 

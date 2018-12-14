@@ -36,16 +36,18 @@ def Cords(previousX,previousY,x,y):
 
     rob.translate((0.028 * x, 0.028 * y, 0), 1, 0.5)  # 0.028 = 2.8cm
 
-def Up():
+def Up(z):
     rob = urx.Robot("10.55.55.41")
     rob.set_tcp((0, 0, 0, 0, 0, 0))
-    rob.translate((0, 0, 0.014), 0.5, 0.25)
+    rob.translate((0, 0, z), 0.5, 0.25) # 0.0175 pour les bleus
 
-def Down():
+def Down(z):
     rob = urx.Robot("10.55.55.41")
     rob.set_tcp((0, 0, 0, 0, 0, 0))
-    rob.translate((0, 0, -0.014), 0.5, 0.25)
+    rob.translate((0, 0, -1*z), 0.5, 0.25) # -0.0175 pour les bleus
 
 
-
-
+#PlayPose()
+#Down()
+#Cords(0,0,0,0)
+WaitPose()

@@ -170,6 +170,8 @@ class DraughtsBrain(object):
             self.gameover = True
             self.winner = 'LIGHT'
         else:
+            if action.type=='CAPTURE':
+                self.pickAndDestroy(action)
             self.switch_turn()
             if action.type != 'CAPTURE':
                 self.nocapturecounter += 1
@@ -182,19 +184,44 @@ class DraughtsBrain(object):
         drow, dcol = action.destination
         move.PlayPose()
         move.Cords(0, 0, srow, scol)
-        move.Down()
+        move.Down(0.0175)
         prehenseur.Aspire()
+        time.sleep(1.5)
+        move.Up(0.0175)
         time.sleep(0.5)
-        move.Up()
-        time.sleep(1)
         move.Cords(srow, scol, drow, dcol)
-        move.Down()
+        move.Down(0.0175)
         prehenseur.Stop()
+        time.sleep(1.5)
+        move.Up(0.0175)
         time.sleep(0.5)
-        move.Up()
-        time.sleep(1)
-        move.WaitPose()
+        if(action.capture!='CAPTURE'):
+            move.WaitPose()
 
+    def pickAndDestroy(self,action):
+        # Get Source and Destination.
+        z=0.014
+        srow, scol = action.source
+        drow, dcol = action.destination
+        testRow = (drow + srow)/2
+        testCol = (scol + dcol)/2
+        action.destination = testRow, testCol
+        action.source = action.destination
+        move.PlayPose()
+        move.Cords(0, 0, testRow, testCol)
+        move.Down(z)
+        prehenseur.Aspire()
+        time.sleep(1.5)
+        move.Up(z)
+        time.sleep(0.5)
+        move.Cords(testRow,testCol, -1, 5)
+        move.Down(z)
+        prehenseur.Stop()
+        time.sleep(1.5)
+        move.Up(z)
+        time.sleep(0.5)
+        move.WaitPose()
+# (5,4) et (3,6) => (4,5)
     ########
     ## AI ##
     ########
