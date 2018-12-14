@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-10-15" view-index="0" gantt-divider-location="523" resource-divider-location="300" version="2.8.6" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-10-15" view-index="0" gantt-divider-location="523" resource-divider-location="300" version="2.8.8" locale="fr">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Nom" width="353" order="0"/>
         <field id="tpd4" name="Date de début" width="75" order="1"/>
         <field id="tpd5" name="Date de fin" width="76" order="2"/>
         <option id="taskLabelUp" value="name"/>
-        <option id="taskLabelDown" value=""/>
-        <option id="taskLabelLeft" value=""/>
-        <option id="taskLabelRight" value=""/>
         <option id="color.recent"><![CDATA[#ff0033 #ff0000 #ff3333 #ff3366]]></option>
     </view>
     <view id="resource-table">
@@ -64,7 +61,7 @@
             <depend id="39" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="39" name="Livraison cahier des charges V1" color="#ff3333" meeting="true" start="2018-11-30" duration="0" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true"/>
-        <task id="14" name="Prototypage" color="#8cb6ce" meeting="false" start="2018-10-29" duration="31" complete="0" thirdDate="2018-09-13" thirdDate-constraint="0" expand="true">
+        <task id="14" name="Prototypage" color="#8cb6ce" meeting="false" start="2018-10-29" duration="34" complete="0" thirdDate="2018-09-13" thirdDate-constraint="0" expand="true">
             <depend id="31" type="2" difference="0" hardness="Strong"/>
             <task id="83" name="Système de saisie" color="#8cb6ce" meeting="false" start="2018-10-29" duration="21" complete="0" thirdDate="2018-10-29" thirdDate-constraint="0" expand="true">
                 <depend id="73" type="2" difference="0" hardness="Strong"/>
@@ -83,7 +80,7 @@
                     <depend id="229" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
-            <task id="122" name="Développement du système de déplacement" meeting="false" start="2018-10-29" duration="31" complete="0" expand="true">
+            <task id="122" name="Développement du système de déplacement" meeting="false" start="2018-10-29" duration="34" complete="0" expand="true">
                 <depend id="73" type="2" difference="0" hardness="Strong"/>
                 <task id="123" name="Déplacement robot basique" color="#8cb6ce" meeting="false" start="2018-10-29" duration="8" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
                     <depend id="125" type="2" difference="0" hardness="Strong"/>
@@ -99,7 +96,7 @@
                     <depend id="229" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="229" name="Déplacement et saisie de pions" color="#8cb6ce" meeting="false" start="2018-11-28" duration="1" complete="0" thirdDate="2018-12-03" thirdDate-constraint="0" expand="true"/>
-                <task id="232" name="Intégration tour humain" color="#8cb6ce" meeting="false" start="2018-12-10" duration="1" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true"/>
+                <task id="232" name="Intégration tour humain" color="#8cb6ce" meeting="false" start="2018-12-10" duration="4" complete="0" thirdDate="2018-12-10" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="132" name="Système de reconnaissance vidéo" meeting="false" start="2018-10-29" duration="30" complete="0" expand="true">
                 <depend id="73" type="2" difference="0" hardness="Strong"/>
@@ -115,23 +112,22 @@
                 <task id="192" name="Détection pions" color="#8cb6ce" meeting="false" start="2018-11-27" duration="5" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
                     <depend id="196" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="196" name="Fonction qui renvoie état du damier" color="#8cb6ce" meeting="false" start="2018-12-04" duration="4" complete="0" thirdDate="2018-10-08" thirdDate-constraint="0" expand="true">
+                <task id="196" name="Fonction qui renvoie état du damier" color="#8cb6ce" meeting="false" start="2018-12-04" duration="4" complete="0" thirdDate="2018-12-04" thirdDate-constraint="0" expand="true">
                     <depend id="232" type="2" difference="0" hardness="Strong"/>
                 </task>
             </task>
         </task>
-        <task id="26" name="Documentation" color="#000000" meeting="false" start="2018-11-22" duration="17" complete="0" thirdDate="2018-12-11" thirdDate-constraint="0" expand="true">
+        <task id="26" name="Documentation" color="#000000" meeting="false" start="2018-12-14" duration="1" complete="0" thirdDate="2018-12-11" thirdDate-constraint="0" expand="true">
             <depend id="44" type="2" difference="0" hardness="Strong"/>
-            <task id="30" name="Technique" meeting="false" start="2018-11-22" duration="17" complete="0" expand="true"/>
-            <task id="31" name="Utilisateur" color="#8cb6ce" meeting="false" start="2018-12-11" duration="1" complete="0" thirdDate="2019-01-04" thirdDate-constraint="0" expand="true"/>
+            <task id="31" name="Utilisateur" color="#8cb6ce" meeting="false" start="2018-12-14" duration="1" complete="0" thirdDate="2019-01-04" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="73" name="Tests utilisateurs" color="#8cb6ce" meeting="false" start="2018-12-11" duration="3" complete="0" thirdDate="2018-11-19" thirdDate-constraint="0" expand="true">
+        <task id="73" name="Tests utilisateurs" color="#8cb6ce" meeting="false" start="2018-12-14" duration="1" complete="0" thirdDate="2018-11-19" thirdDate-constraint="0" expand="true">
             <depend id="29" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="29" name="Vidéo de présentation" color="#8cb6ce" meeting="false" start="2018-12-14" duration="1" complete="0" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true">
+        <task id="29" name="Vidéo de présentation" color="#8cb6ce" meeting="false" start="2018-12-17" duration="1" complete="0" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true">
             <depend id="44" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="44" name="Livraison Prototypage / Documentation" color="#ff0000" meeting="true" start="2018-12-17" duration="0" complete="0" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true"/>
+        <task id="44" name="Livraison Prototype / Documentation" color="#ff0000" meeting="true" start="2018-12-18" duration="0" complete="0" thirdDate="2018-12-18" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Enzo" function="Default:0" contacts="" phone=""/>
